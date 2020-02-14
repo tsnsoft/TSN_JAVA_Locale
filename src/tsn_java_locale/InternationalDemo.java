@@ -1,4 +1,4 @@
-package kz.tsn.learning.locale;
+package tsn_java_locale;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
