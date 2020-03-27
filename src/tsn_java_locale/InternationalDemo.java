@@ -28,10 +28,11 @@ public class InternationalDemo {
                 country = "BY";
                 break;
         }
-        Locale userLocale = new Locale(language, country);
-        ResourceBundle rb = ResourceBundle.getBundle("text", userLocale);
+        ResourceBundle rb = ResourceBundle.getBundle("text", new Locale(language, country));
         System.out.println(getStr(rb.getString("my.question"), rb.getString("utf16")));
         System.out.println(getStr(rb.getString("my.reply"), rb.getString("utf16")));
+//        System.out.println(rb.getString("my.question")); // Так делать нельзя для некоторых языков, например, белорусского
+//        System.out.println(rb.getString("my.reply")); // Âîñü ó ÷ûì ïûòàííå. <- вот так иначе получится
     }
 
     public static String getStr(String text, String utf16) throws UnsupportedEncodingException {

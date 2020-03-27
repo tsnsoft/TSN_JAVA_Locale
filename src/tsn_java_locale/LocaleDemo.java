@@ -9,14 +9,13 @@ public class LocaleDemo {
 
     public static void main(String[] args) {
         Locale.setDefault(new Locale("en", "US"));
-
         Locale current = Locale.getDefault();
-        System.out.println(current.getCountry());
-        System.out.println(current.getDisplayCountry());
-        System.out.println(current.getLanguage());
-        System.out.println();
 
-        current.getDisplayLanguage();
+        System.out.println(current.getCountry()); // US
+        System.out.println(current.getDisplayCountry()); // United States
+        System.out.println(current.getLanguage()); // en
+        System.out.println(current.getDisplayLanguage()); // English
+        System.out.println();
 
         Locale[] locales = new Locale[]{Locale.JAPAN, Locale.CHINA, Locale.KOREA, Locale.TAIWAN, Locale.ITALY,
             Locale.FRANCE, Locale.GERMAN, Locale.CANADA, Locale.ENGLISH, new Locale("ru", "RU"), new Locale("ru"),
