@@ -1,6 +1,5 @@
 package tsn_java_locale;
 
-import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
