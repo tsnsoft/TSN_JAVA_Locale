@@ -12,6 +12,7 @@ public class InternationalDemo {
         System.out.println("1 – Английский");
         System.out.println("2 – Казахский");
         System.out.println("3 – Белорусский");
+        System.out.println("4 – Китайский");
         System.out.println("Любой другой символ – Русский");
         char i = (char) System.in.read();
         switch (i) {
@@ -27,6 +28,10 @@ public class InternationalDemo {
                 language = "bel";
                 country = "BY";
                 break;
+            case '4':
+                language = "zh";
+                country = "TW";
+                break;        
         }
         ResourceBundle rb = ResourceBundle.getBundle("text", new Locale(language, country));
         System.out.println(getStr(rb.getString("my.question"), rb.getString("utf16")));

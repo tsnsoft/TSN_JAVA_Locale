@@ -8,13 +8,13 @@ import java.util.Locale;
 public class LocaleDemo {
 
     public static void main(String[] args) {
-        Locale.setDefault(new Locale("en", "US"));
+        Locale.setDefault(new Locale("ru", "KZ"));
         Locale current = Locale.getDefault();
 
-        System.out.println(current.getCountry()); // US
-        System.out.println(current.getDisplayCountry()); // United States
-        System.out.println(current.getLanguage()); // en
-        System.out.println(current.getDisplayLanguage()); // English
+        System.out.println(current.getCountry()); // KZ
+        System.out.println(current.getDisplayCountry()); // Казахстан
+        System.out.println(current.getLanguage()); // ru
+        System.out.println(current.getDisplayLanguage()); // русский
         System.out.println();
 
         Locale[] locales = new Locale[]{Locale.JAPAN, Locale.CHINA, Locale.KOREA, Locale.TAIWAN, Locale.ITALY,
